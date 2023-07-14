@@ -1,0 +1,119 @@
+@keyframes sideBarMovesLeft {
+    0% {
+        width: 200px;
+        height: 100vh;
+        border-radius: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    /* 400ms */
+    60% {
+        width: 24px;
+        height: 100vh;
+        border-radius: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    /* 800ms */
+    80% {
+        width: 24px;
+        height: 24px;
+        border-radius: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    100% {
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@keyframes sideBarMovesRight {
+    0% {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+    }
+    25% {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 24px;
+        height: 100vh;
+    }
+    100% {
+        width: 200px;
+        height: 100vh;
+    }
+}
+
+@keyframes contentMovesLeft {
+    0% {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+    100% {
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+@keyframes contentMovesRight {
+    0% {
+        margin-left: 0px;
+        width: 100%;
+    }
+    25% {
+        margin-left: 0px;
+        width: 100%;
+    }
+    100% {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}
+
+@keyframes toBlackBg {
+    from {
+        background-color: #0000;
+    } to {
+        background-color: black;
+    }
+}
+
+@keyframes toTransparentBg {
+    from {
+        background-color: black;
+    } to {
+        background-color: none;
+    }
+}
+
+.sideHorizontalTransitionLeft {
+    animation: sideBarMovesLeft 1000ms;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sideHorizontalTransitionRight {
+    animation: sideBarMovesRight 800ms;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.contentTransitionLeft {
+    animation: contentMovesLeft 600ms;
+}
+
+.contentTransitionRight {
+    animation: contentMovesRight 800ms;
+}
+
+.iconBgToBlack {
+    animation: toBlackBg 2000ms;
+}
+
+.iconBgToTransparent {
+    animation: toTransparentBg 800ms;
+}
