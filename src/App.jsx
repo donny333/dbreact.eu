@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/organisms/Footer/Footer';
 import SideBar from './components/organisms/SideBar/SideBar';
 import Home from './components/pages/Home/Home';
+import Header from './components/organisms/Header/Header';
 
 const App = () => {
 
@@ -17,10 +18,15 @@ const App = () => {
       <SideBar
         sideBarWidthChange = { handleSideBarChange }
       />
+      <Header
+        folded = { folded }
+      />
       <Home
         folded = { folded  }
       />
-      <Footer/>
+      <Footer
+        folded = { folded }
+      />
     </>
   );
 }

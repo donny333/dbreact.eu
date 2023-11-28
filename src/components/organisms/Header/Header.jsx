@@ -1,8 +1,8 @@
-import StyledFooter from "./StyledFooter";
+import StyledHeader from "./StyledHeader";
 
-const Footer = ( { folded } ) => {
+const Header = ({folded}) => {
     return ( 
-        <StyledFooter
+        <StyledHeader
         style={
             !folded ? 
             {width:"calc(100% - 200px)", marginLeft:"200px"} :
@@ -13,9 +13,9 @@ const Footer = ( { folded } ) => {
             "contentTransitionLeft"
         }
         >
-            <h2>This is a footer. Also very beautiful</h2>
-        </StyledFooter>
-    );
+            <h1>This is a Header very beautiful</h1>
+        </StyledHeader>
+     );
 }
  
-export default Footer;
+export default Header;
