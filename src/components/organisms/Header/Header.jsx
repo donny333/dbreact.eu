@@ -13,7 +13,7 @@ const Header = ({folded}) => {
             "contentTransitionLeft"
         }
         >
-            <h1>This is a Header very beautiful</h1>
+            <h2>This is a Header very beautiful</h2>
         </StyledHeader>
      );
 }

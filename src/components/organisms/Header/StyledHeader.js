@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-    padding: 15px 50px;
-    > h1 {
+    > h2 {
         margin: 0;
+        padding: 15px 50px;
     }
 
 `;
