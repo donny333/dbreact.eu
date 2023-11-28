@@ -8,6 +8,7 @@ const StyledSideBar = styled.aside`
     overflow: hidden;
     background-image: url('https://media.discordapp.net/attachments/1101881824378097738/1129394748461940736/side_wave.png?width=234&height=1170');
     background-color: white;
+    z-index: 100;
     > div{
         width: 100%;
         height: 24px;
