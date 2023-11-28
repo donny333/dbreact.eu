@@ -35,6 +35,7 @@ const StyledFooter = styled.footer`
     }
     #footerIcons {
         width: 20%;
+        min-width: 220px;
         margin-bottom: 60px;
         display: flex;
         justify-content: space-between;

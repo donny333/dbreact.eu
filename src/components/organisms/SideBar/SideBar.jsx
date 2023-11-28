@@ -6,7 +6,7 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 
 const SideBar = ( { sideBarWidthChange } ) => {
     
-    const [folded, setFolded] = useState(false)
+    const [folded, setFolded] = useState(true)
     
     const sidebarFold = () => {
         if(folded){

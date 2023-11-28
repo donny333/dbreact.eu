@@ -7,7 +7,8 @@ import Header from './components/organisms/Header/Header';
 
 const App = () => {
 
-  const [folded, setFolded] = useState(false)
+  const [folded, setFolded] = useState(true);
+  console.log(folded)
 
   const handleSideBarChange = ( newState ) => {
     setFolded( newState )
